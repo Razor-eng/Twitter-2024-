@@ -7,7 +7,6 @@ import Widgets from "./components/layout/Widgets"
 import ContextProvider from "./context/Context"
 import LoginModal from "./components/modal/LoginModal"
 import RegisterModal from "./components/modal/RegisterModal"
-import LoadingModal from "./components/modal/LoadingModal"
 import Post from "./pages/Post"
 import Explore from "./pages/Explore"
 import Notification from "./pages/Notification"
@@ -31,7 +30,7 @@ function App() {
                   <div
                     className="
               min-h-screen
-              col-span-3 
+              col-span-4 
               lg:col-span-2 
               border-x 
               dark:border-neutral-800

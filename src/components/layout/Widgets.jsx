@@ -12,8 +12,6 @@ export default function Widgets() {
     const [randomUserNum, setRandomUserNum] = useState(3);
     const { currentUser, users } = useContext(Context);
 
-    console.log(users)
-
     useEffect(() => {
         axios.get("https://saurav.tech/NewsAPI/top-headlines/category/business/us.json").then((res) => {
             setArticles(res.data.articles);

@@ -31,7 +31,8 @@ const Modal = ({ isOpen, onClose, onSubmit, title, body, actionLabel, footer, di
           items-center 
           flex 
           overflow-x-hidden 
-          overflow-y-auto 
+          overflow-y-hidden
+          md:overflow-y-auto 
           fixed 
           inset-0 
           z-50 

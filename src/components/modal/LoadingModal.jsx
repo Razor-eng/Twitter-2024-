@@ -75,9 +75,6 @@ const LoadingModal = () => {
         justify-center 
         text-6xl
         md:text-8xl
-        absolute
-        top-[30%] left-[50%]
-        md:static
     ">
                             <BsTwitter className="text-[#1DA1F2] dark:text-white" />
                         </div>

@@ -71,6 +71,7 @@ const ImageUpload = ({ onChange, label, value, disabled, isProfile, currentUser,
                         height="100"
                         width="100"
                         alt="Uploaded image"
+                        className={`${isProfile ? 'rounded-full border p-1 w-32' : 'w-full h-32'}`}
                     />
                 </div>
             ) : (

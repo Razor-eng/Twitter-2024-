@@ -7,7 +7,7 @@ const CommentItem = ({ data = {} }) => {
     const navigate = useNavigate();
 
     const goToUser = () => {
-        navigate(`/users/${data.userId}`)
+        navigate(`/users/${data?.userId}`)
     };
 
     const createdAt = (createdAt) => {
@@ -26,7 +26,7 @@ const CommentItem = ({ data = {} }) => {
         transition
       ">
             <div className="flex flex-row items-start gap-3">
-                <Avatar userId={''} />
+                <Avatar userId={data?.userId} />
                 <div>
                     <div className="flex flex-col md:flex-row items-start md:items-center md:gap-2">
                         <p
@@ -50,7 +50,7 @@ const CommentItem = ({ data = {} }) => {
                             @{data?.username}
                         </span>
                         <span className="text-neutral-500 text-sm">
-                            {createdAt(data?.createdAt)}
+                            {createdAt(data?.createdAt)} ago
                         </span>
                     </div>
                     <div className="mt-1">

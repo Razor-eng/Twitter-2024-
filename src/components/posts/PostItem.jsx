@@ -12,9 +12,8 @@ const PostItem = ({ data = {} }) => {
   const { hasLiked, onLike } = useContext(Context);
   const [liked, setLiked] = useState(hasLiked(data));
 
-  const goToUser = (ev) => {
-    ev.stopPropagation();
-    // router.push(`/users/${data.user.id}`)
+  const goToUser = () => {
+    navigate(`/users/${data?.postData?.userId}`)
   };
 
   const goToPost = () => {
@@ -40,7 +39,10 @@ const PostItem = ({ data = {} }) => {
         transition
       ">
       <div className="flex flex-row items-start gap-3">
-        <Avatar userId={data?.postData?.userId} post='lg' />
+        <Avatar
+          userId={data?.postData?.userId}
+          post='lg'
+        />
         <div>
           <div className='flex gap-2'>
             <Avatar userId={data?.postData?.userId} post='md' />

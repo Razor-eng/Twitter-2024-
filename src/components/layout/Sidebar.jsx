@@ -77,7 +77,7 @@ const Sidebar = () => {
             <Button label="Login" fullWidth onClick={openLoginModal} />
           }
         </div>
-        <div className="md:hidden flex items-center w-full justify-between absolute bottom-0 left-0 px-4 bg-zinc-200 dark:bg-zinc-800">
+        <div className="md:hidden flex items-center w-full justify-between bottom-0 left-0 px-4 bg-zinc-200 dark:bg-zinc-800 z-50 fixed">
           {items.map((item, id) => id < 2 && (
             <SidebarItem
               key={id}
